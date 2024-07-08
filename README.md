@@ -1,2 +1,2 @@
 # kbafadriquela.github.io
-Sample repository description
+Professional portfolio  of Krizia Bianca Fadriquela
