@@ -70,6 +70,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0
 }
+.body-lg {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+@media (max-width: 767px) {
+	.body-lg {
+		padding:0 20px
+	}
+}
 .navbar-container {
 	display: flex;
 	justify-content: flex-end;
@@ -428,16 +438,6 @@ a:hover {
 @media (max-width: 767px) {
 	#topBackground {
 		height:500px
-	}
-}
-.body-lg {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 40px;
-}
-@media (max-width: 767px) {
-	.body-lg {
-		padding:0 20px
 	}
 }
 .section-title {
