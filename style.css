@@ -513,7 +513,7 @@ svg:not(:root).svg-inline--fa {
 		width: 0;
 	}
 	to {
-		width: 635px;
+		width: 100%;
 	}
 }
 @keyframes cursor {
