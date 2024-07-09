@@ -129,17 +129,18 @@ table {
     color: #747fe0;
 }
 @media (max-width: 767px) {
-	.hero-container .hero-title {
+	.hero-container .hero-title, .type-out {
 		font-size:2.3em
 	}
 }
 .type-out {
-	width: 0%;
 	margin: 0;
 	border-right: .15em solid hsla(0, 0%, 97%, .65);
 	overflow: hidden;
-	white-space: nowrap;
-	animation: typing-1 1.5s 0s steps(40, end) forwards, cursor 1s linear 0s 4;
+  	white-space: nowrap;
+  	animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  	font-size: 4.5em;
+  	width: 0;
 }
 .hero-container .hero-title:before {
 	content: ">\A0";
@@ -496,6 +497,14 @@ svg:not(:root).svg-inline--fa {
 	30%, 75% {
 		border-color: white;
 	}
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: rgba(116, 127, 224, .65); }
 }
 @media (max-width: 767px) {
 	.navbar-container .navbar {
