@@ -264,6 +264,10 @@ table {
 	top: 0;
 	left: 0;
 }
+@media (max-width: 1023px) {
+    .projects-container .project-card .project-image {
+        display: none;
+}
 .projects-container .project-card .project-background {
 	position: absolute;
 	top: -1px;
