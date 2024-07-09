@@ -131,16 +131,7 @@ table {
 	}
 }
 .hero-container .hero-title {
-	font-family: Monaco, Consolas, Lucida Console, monospace;
-	font-size: 4.5em;
-	color: #747fe0;
-	width: 0%;
-	margin: 0;
-	border-right: 0em solid transparent;
-	overflow: hidden;
 	display: inline-block;
-	white-space: nowrap;
-	animation: typing-1 1.5s 0s steps(40, end) forwards, cursor 1s linear 0s 4;
 }
 
 @media (max-width: 767px) {
@@ -148,7 +139,17 @@ table {
 		font-size:2.3em
 	}
 }
-
+.type-out {
+	font-family: Monaco, Consolas, Lucida Console, monospace;
+	font-size: 4.5em;
+	color: #747fe0;
+	width: 0%;
+	margin: 0;
+	border-right: .15em solid hsla(0, 0%, 97%, .65);
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing-1 1.5s 0s steps(40, end) forwards, cursor 1s linear 0s 4;
+}
 .hero-container .hero-title:before {
 	content: ">\A0";
 }
